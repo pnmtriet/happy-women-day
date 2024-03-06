@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap");
+html {
+    scroll-behavior: smooth;
+    /* font-family: "Roboto", sans-serif; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.page__main {
+    /* Ảnh nền của trang đầu tiên nếu bạn muốn đổi thì đổi tại đây */
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position-y: -18rem;
+}
+.buttons {
+    display: flex;
+    column-gap: 3rem;
+    padding: 2rem;
+    position: absolute;
+    bottom: 20px;
+    left: -350px;
+}
+
+.btn-bir:hover {
+   background: linear-gradient(to right, rgb(251, 150, 27) 0%, rgb(237, 48, 111) 50%, rgb(248, 75, 156) 100%);
+}
+
+.btn-bir {    
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 24px;
+    border: none;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+    color: #fff;
+}
+
+.btn-timeline {
+    background-image: linear-gradient(
+        to right,
+        #da22ff 0%,
+        #9733ee 51%,
+        #da22ff 100%
+    );
+}
+.btn-timeline {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-timeline:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-gallery {
+    background-image: linear-gradient(
+        to right,
+        #02aab0 0%,
+        #00cdac 51%,
+        #02aab0 100%
+    );
+}
+.btn-gallery {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-gallery:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.cover {
+    width: 240px;
+    height: 240px;
+   
+    box-shadow: 0 0 30px #eee;
+    position: absolute;
+    margin-top: 3rem;
+    left: calc(50% - 100px);
+  
+    border-radius: 120px;
+    border: 5px solid rgb(255, 17, 0);
+}
+.say{
+    color: #3500ff;
+}
+.sayLast{
+    color: #f3132d;
+}
+#code{
+    font-size: 30px;
+    font-family: 'Lobster', cursive !important;
+}
+.btnSay{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 24px;
+    border: none;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+    color: #fff;
+}
+.btnSay a{
+    color:white;
+    text-decoration: none;
+}
+

@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/anim.css">
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
+    <!-- Cây đào -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jscex.min.js"></script>
+    <script type="text/javascript" src="./js/jscex-parser.js"></script>
+    <script type="text/javascript" src="./js/jscex-jit.js"></script>
+    <script type="text/javascript" src="./js/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="./js/jscex-async.min.js"></script>
+    <script type="text/javascript" src="./js/jscex-async-powerpack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script type="text/javascript" src="./js/functions.js" charset="utf-8"></script>
+    <!-- <script type="text/javascript" src="./js/love.js" charset="utf-8"></script> -->
+    <style type="text/css"></style>
+    <title>Happy Birthday</title>
+</head>
+
+<body>
+    <div class="counter">
+        <!-- <iframe src="./music/countdown.mp3" allow="autoplay"> -->
+        <audio id="countdown" autoplay>
+            <source src="./music/countdown.mp3" type="audio/mpeg">
+        </audio>
+        <div class="nums">
+            <span class="in">10</span>
+            <span>9</span>
+            <span>8</span>
+            <span>7</span>
+            <span>6</span>
+            <span>5</span>
+            <span>4</span>
+            <span>3</span>
+            <span>2</span>
+            <span>1</span>
+            <span>Bắt đầu!</span>
+        </div>
+    </div>
+    <div class="final">
+        <!-- <audio id="khmsn" autoplay loop>
+            <source src="./music/khmsn.mp3" type="audio/mpeg">
+        </audio> -->
+        <!-- content when countdown finish -->
+        <canvas id=c></canvas>
+    </div>
+
+    <div id="step2">
+        <div hidden="hidden" id="my-box3d">
+            <div class="box">
+                <ul class="minbox">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ol class="maxbox">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+
+            <div class="box">
+                <ul class="minbox">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ol class="maxbox">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+            <!-- <div class="buttons"></div> -->
+            <label class="lightBulb">
+                <input type="checkbox">
+                <span>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                </span>
+            </label>
+
+        </div>
+        <div hidden="hidden" id="myFirefly"></div>
+    </div>
+    <div hidden="hidden" id="step3">
+        <div class="container">
+            <div class="balloon">
+                <div><span class="spanBallon">H</span></div>
+                <div><span class="spanBallon">A</span></div>
+                <div><span class="spanBallon">P</span></div>
+                <div><span class="spanBallon">P</span></div>
+                <div><span class="spanBallon">Y</span></div>
+                <div><span class="spanBallon">B</span></div>
+                <div><span class="spanBallon">I</span></div>
+                <div><span class="spanBallon">R</span></div>
+                <div><span class="spanBallon">T</span></div>
+                <div><span class="spanBallon">H</span></div>
+                <div><span class="spanBallon">D</span></div>
+                <div><span class="spanBallon">A</span></div>
+                <div><span class="spanBallon">Y</span></div>
+            </div>
+            <div class="avatar">
+                <img src="./MyAvatar.jpg" alt="" class="avatar__img" onclick="showMessage()" />
+                <h1 onclick="showMessage()" class="avatar__title">Cẩm Tú</h1>
+            </div>
+            <button class="buttons btn-bir">Đi ngắm hoa đào đi Tú Tú ơi</button>
+        </div>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+            document.querySelector(".btn-bir").addEventListener('click',()=>{
+                window.location.replace("/sakura.html");
+            });
+            function showMessage() {
+                swal({
+                    title: "Lời nhắn",
+                    text: "Đi ngắm hoa đào đi ạ!",
+                    button: {
+                        text: "❤️️",
+                    },
+                });
+            }
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </div>
+</body>
+<!-- <audio id="player" autoplay loop>
+    <source src="./music/music.mp3" type="audio/mp3" />
+</audio> -->
+
+<script src="./js/box3d.js"></script>
+<script src="./js/anim.js"></script>
+<script src="./js/index.js"></script>
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./js/lightBulb.js"></script>
+</body>
+
+</html>
