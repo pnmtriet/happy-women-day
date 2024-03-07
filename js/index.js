@@ -78,9 +78,6 @@ var w = c.width = window.innerWidth,
     // strings: [ 'HAPPY', 'BIRTHDAY!','CHÚC MỪNG', 'SINH NHẬT!' ],
     strings: [
       ['HÔM NAY LÀ', 'MỘT NGÀY ĐẶC BIỆT'],
-     // ['VÀO NGÀY NÀY', '27 NĂM TRƯỚC'],
-     // ['MỘT EM BÉ', 'ĐÁNG YÊU', 'RA ĐỜI'],
-     // ['CHÚC MỪNG', 'SINH NHẬT', 'CẨM TÚ'],
     ],
     charSize: 60,
     charSpacing: 70,
@@ -485,7 +482,7 @@ function anim() {
     percentTrans = 0;
   }
 
-  if (percentTrans < 120) {
+  if (percentTrans < 105) {
     percentTrans++;
     // mFirefly.style.transform = "translate(50%,50%)";
     box3d.style.transform = "translate(0,-" + percentTrans + "%)";

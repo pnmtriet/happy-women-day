@@ -10,15 +10,8 @@
     <!-- Cây đào -->
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/jscex.min.js"></script>
-    <script type="text/javascript" src="./js/jscex-parser.js"></script>
-    <script type="text/javascript" src="./js/jscex-jit.js"></script>
-    <script type="text/javascript" src="./js/jscex-builderbase.min.js"></script>
-    <script type="text/javascript" src="./js/jscex-async.min.js"></script>
-    <script type="text/javascript" src="./js/jscex-async-powerpack.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script type="text/javascript" src="./js/functions.js" charset="utf-8"></script>
-    <!-- <script type="text/javascript" src="./js/love.js" charset="utf-8"></script> -->
     <style type="text/css"></style>
     <title>Happy Birthday</title>
 </head>
@@ -32,14 +25,14 @@
         <div class="nums">
             <span class="in">10</span>
             <span>9</span>
-            <span>8</span>
+            <!-- <span>8</span>
             <span>7</span>
             <span>6</span>
             <span>5</span>
             <span>4</span>
             <span>3</span>
             <span>2</span>
-            <span>1</span>
+            <span>1</span> -->
             <span>Bắt đầu!</span>
         </div>
     </div>
@@ -90,39 +83,23 @@
                 <div><span class="spanBallon">P</span></div>
                 <div><span class="spanBallon">P</span></div>
                 <div><span class="spanBallon">Y</span></div>
-                <div><span class="spanBallon">B</span></div>
-                <div><span class="spanBallon">I</span></div>
-                <div><span class="spanBallon">R</span></div>
-                <div><span class="spanBallon">T</span></div>
-                <div><span class="spanBallon">H</span></div>
+                <div><span class="spanBallon">W</span></div>
+                <div><span class="spanBallon">O</span></div>
+                <div><span class="spanBallon">M</span></div>
+                <div><span class="spanBallon">E</span></div>
+                <div><span class="spanBallon">N</span></div>
                 <div><span class="spanBallon">D</span></div>
                 <div><span class="spanBallon">A</span></div>
                 <div><span class="spanBallon">Y</span></div>
             </div>
-            <div class="avatar">
-                <img src="./MyAvatar.jpg" alt="" class="avatar__img" onclick="showMessage()" />
-                <h1 onclick="showMessage()" class="avatar__title">Cẩm Tú</h1>
+            <div id="wrap">
+                <div class="type-writter">
+                    <p>
+                        <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </p>
+                  </div>
             </div>
-            <button class="buttons btn-bir">Đi ngắm hoa đào đi Tú Tú ơi</button>
         </div>
-        <script>
-            if (document.location.search.match(/type=embed/gi)) {
-                window.parent.postMessage("resize", "*");
-            }
-            document.querySelector(".btn-bir").addEventListener('click',()=>{
-                window.location.replace("/sakura.html");
-            });
-            function showMessage() {
-                swal({
-                    title: "Lời nhắn",
-                    text: "Đi ngắm hoa đào đi ạ!",
-                    button: {
-                        text: "❤️️",
-                    },
-                });
-            }
-        </script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </div>
 </body>
 <!-- <audio id="player" autoplay loop>
@@ -133,6 +110,7 @@
 <script src="./js/anim.js"></script>
 <script src="./js/index.js"></script>
 <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./js/typing.js"></script>
 <script src="./js/lightBulb.js"></script>
 </body>
 

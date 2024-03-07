@@ -1,6 +1,5 @@
 const lightBulb = document.querySelector(".lightBulb");
 
-
 const timeLightOn = 10;//second
 let indexPercent = 10;//percent
 
@@ -18,6 +17,7 @@ lightBulb.addEventListener('click', function(event) {
         animLightOn();
         myStep3.removeAttribute("hidden");        
     }, 500);
+    if(textArray.length) setTimeout(type, 5000);
 });
 
 
@@ -36,4 +36,5 @@ function animLightOn(){
     }, 1000*timeLightOn/10);
    
     document.body.style.backgroundImage = `url("../images/background.png")`;
+
 }
