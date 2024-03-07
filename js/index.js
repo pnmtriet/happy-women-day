@@ -77,8 +77,8 @@ var w = c.width = window.innerWidth,
   opts = {
     // strings: [ 'HAPPY', 'BIRTHDAY!','CHÚC MỪNG', 'SINH NHẬT!' ],
     strings: [
-      // ['HÔM NAY LÀ', 'MỘT NGÀY ĐẶC BIỆT'],
-      // ['NGÀY MÀ CẢ THẾ GIỚI', 'DÀNH RIÊNg ĐỂ TÔN VINH', 'PHỤ NỮ'],
+      ['HÔM NAY LÀ', 'MỘT NGÀY ĐẶC BIỆT'],
+      ['NGÀY MÀ CẢ THẾ GIỚI', 'DÀNH RIÊNg ĐỂ TÔN VINH', 'PHỤ NỮ'],
       ['ĐÂY CŨNG LÀ DỊP ĐỂ THỂ HIỆN', 'SỰ TÔN TRỌNG VỚI', 'CHỊ EM NHÀ TEAMOBI'],
     ],
     charSize: 40,
