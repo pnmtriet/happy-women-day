@@ -941,13 +941,13 @@ li {
 
 .type-writter {  
   font-family: 'Lobster', cursive;
-  margin-top: 270px;
-  width: 700px;
+  margin-top: 280px;
+  width: 800px;
   height: 100vh;
   display: flex;
 }
 .type-writter p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 0.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
@@ -956,7 +956,7 @@ li {
 }
 .type-writter p span.typed-text {
   font-weight: normal;
-  color:#0640b4;
+  color:#cd5c27;
 }
 .type-writter p span.cursor {
   display: inline-block;

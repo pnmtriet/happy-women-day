@@ -77,11 +77,13 @@ var w = c.width = window.innerWidth,
   opts = {
     // strings: [ 'HAPPY', 'BIRTHDAY!','CHÚC MỪNG', 'SINH NHẬT!' ],
     strings: [
-      ['HÔM NAY LÀ', 'MỘT NGÀY ĐẶC BIỆT'],
+      // ['HÔM NAY LÀ', 'MỘT NGÀY ĐẶC BIỆT'],
+      // ['NGÀY MÀ CẢ THẾ GIỚI', 'DÀNH RIÊNg ĐỂ TÔN VINH', 'PHỤ NỮ'],
+      ['ĐÂY CŨNG LÀ DỊP ĐỂ THỂ HIỆN', 'SỰ TÔN TRỌNG VỚI', 'CHỊ EM NHÀ TEAMOBI'],
     ],
-    charSize: 60,
-    charSpacing: 70,
-    lineHeight: 80,
+    charSize: 40,
+    charSpacing: 46,
+    lineHeight: 53,
 
     cx: w / 2,
     cy: h / 2,
